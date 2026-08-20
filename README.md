@@ -60,7 +60,7 @@ Also: *Electromagnetic Compatibility of Electronic Devices*, teaching guide, TUS
 
 This file is the starting position and stays as written.
 
-Each stage of the work gets its own folder named by the date it was done, with its own README inside: what was done that day, what worked, what did not. Raw captures and notes live in the same folder.
+Each stage of the work gets its own folder, named by the date it was done, with its own README describing that stage — whatever it happened to consist of. Raw captures and notes live in the same folder.
 
 ## Licence
 
