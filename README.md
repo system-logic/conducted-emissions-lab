@@ -1,8 +1,8 @@
 # Conducted Emissions Lab
 
-Conducted emissions from switching voltage converters, 150 kHz – 30 MHz: a home-built pre-compliance bench, open data, and a re-test of claims I published between 2015 and 2021.
+Conducted emissions from switching voltage converters, 150 kHz – 30 MHz: a home-built pre-compliance bench, open data, and a re-test of claims I published between 2015 and 2019.
 
-Between 2015 and 2021 I worked in a university EMC lab and published nine papers and three patents on this subject. The ideas hold up; the discipline does not. The results rested on one-off prototypes, with no reproducibility protocol, and were measured with a detector for which no limits are defined in this band. This repository restates those results as falsifiable claims and tests them on a bench built from scratch, with everything published — raw captures, metadata, processing code — so the work can be contested rather than believed.
+Between 2015 and 2019 I worked in a university EMC lab and published a series of papers and patents on this subject. The ideas hold up; the discipline does not. The results rested on one-off prototypes, with no reproducibility protocol, and were measured with a detector for which no limits are defined in this band. This repository restates those results as falsifiable claims and tests them on a bench built from scratch, with everything published — raw captures, metadata, processing code — so the work can be contested rather than believed.
 
 The five claims and their known weaknesses: [`claims.md`](claims.md).
 
@@ -26,35 +26,37 @@ The consequence is a hard limit on what may be concluded here. Relative comparis
 
 ## Original body of work
 
-Nine papers and three patents, published in Russian, 2015–2021. Two papers also appeared in translated English editions indexed in Scopus. Everything in this project cites these by ID.
+Published in Russian, 2015–2019. Everything in this project cites these by ID.
 
-Publisher typeset versions are not redistributed here — those rights sit with the journals, and with Springer for the translations. Links point to legally available copies. Patent texts are public documents and are included in full.
+Publisher typeset versions are not redistributed here — those rights sit with the journals. Links point to legally available copies. Patent texts are public documents and are included in full.
 
 ### Papers
 
-| ID | Title | Venue | Year | DOI / link |
-|---|---|---|---|---|
-| Z2015-01 | <title> | <journal> | 2015 | <link> |
-| Z2015-02 | <title> | <journal> | 2015 | <link> |
-| Z2016-01 | <title> | <journal> | 2016 | <link> |
-| Z2016-02 | <title> | <journal> | 2016 | <link> |
-| Z2016-03 | <title> | <journal> | 2016 | <link> |
-| Z2017-01 | <title> | <journal> | 2017 | <link> |
-| Z2017-02 | <title> | <journal> | 2017 | not retrieved |
-| Z2019-01 | <title> | <journal> | 2019 | <link> |
-| Z2019-02 | <title> | <journal> | 2019 | not retrieved |
+| ID | Title | Venue | Year |
+|---|---|---|---|
+| Z2015-01 | Analysis of PWM-converter interference emitted to the mains in the 0.15–3 MHz band | *Tekhnologii EMS*, no. 1(52), pp. 21–27 | 2015 |
+| Z2015-02 | Evaluation of matching networks for measuring asymmetric industrial radio noise | *Metrologiya*, no. 2, pp. 64–71 | 2015 |
+| Z2016-01 | On sources of conducted emission in the design of a bridge voltage inverter | *Tekhnologii EMS*, no. 1(56), pp. 41–48 | 2016 |
+| Z2016-02 | Conducted emission of a bridge voltage inverter in current-stabilisation mode and ways to reduce it | *Proceedings of TUSUR*, vol. 19, no. 1, pp. 14–17 | 2016 |
+| Z2016-03 | Parameter selection for a non-isolated voltage converter with EMC in mind | *Silovaya Elektronika*, no. 3, pp. 72–77 | 2016 |
+| Z2016-04 | Soft-switching methods for the transistor switches of a boost converter in a spacecraft power system | *Proceedings of TUSUR*, vol. 19, no. 2, pp. 90–93 | 2016 |
+| Z2017-01 | Battery charge module for space applications | *Proceedings of TUSUR*, vol. 20, no. 1, pp. 121–125 | 2017 |
+| Z2017-02 | Dynamic processes in non-isolated single-ended converters under soft switching | *Silovaya Elektronika*, no. 3, pp. 52–55 | 2017 |
+| Z2019-01 | Conducted emission in push-pull converters with hard and soft switching | *Silovaya Elektronika*, no. 2, pp. 62–65 | 2019 |
 
-Two papers could not be retrieved. The gap is recorded rather than hidden.
+DOIs where assigned: Z2016-02 — `10.21293/1818-0442-2016-19-1-14-17`; Z2016-04 — `10.21293/1818-0442-2016-19-2-90-93`; Z2017-01 — `10.21293/1818-0442-2017-20-1-121-125`.
 
-**Translated editions.** <Z…> appeared in *Measurement Techniques* as <title>, <link>. <Z…> appeared in *Russian Electrical Engineering* as <title>, <link>.
+Z2015-02 is the metrological paper of the cycle — it defines how the measurements in the rest of the work were taken. I have not been able to retrieve a copy; the gap is recorded rather than hidden.
 
-### Patents
+Some of this work also appeared in translated English editions indexed in Scopus. <Fill in which, once confirmed.>
 
-| ID | Subject | Number | Year | File |
-|---|---|---|---|---|
-| P2015-01 | High-voltage medical cable with improved shielding | <no.> | 2015 | [`patents/`](patents/) |
-| P2017-01 | Buck converter with non-dissipative snubber | <no.> | 2017 | [`patents/`](patents/) |
-| P2020-01 | Asymmetric-current supply for electrochemical processes | <no.> | 2020 | [`patents/`](patents/) |
+### Patents (utility models)
+
+| ID | Subject | Number | Filed | Published | File |
+|---|---|---|---|---|---|
+| P2015-01 | Lithotripter transmission cable with improved shielding | RU 159 076 U1 | 2015 | 2016 | [`patents/RU159076.pdf`](patents/) |
+| P2017-01 | Buck converter with a non-dissipative snubber | RU 174 772 U1 | 2017 | 2017 | [`patents/RU174772.pdf`](patents/) |
+| P2020-01 | Asymmetric-current power supply for electrochemical processes | RU 203 341 U1 | 2020 | 2021 | [`patents/RU203341.pdf`](patents/) |
 
 ## How this repository is organised
 
