@@ -1,36 +1,32 @@
 # Conducted Emissions Lab
 
-Conducted emissions from switching voltage converters, 150 kHz – 30 MHz: a home-built pre-compliance bench, open data, and a re-test of claims I published between 2015 and 2019.
+Conducted emissions from switching voltage converters, 150 kHz – 30 MHz.
 
-Between 2015 and 2019 I worked in a university EMC lab and published a series of papers and patents on this subject. The ideas hold up; the discipline does not. The results rested on one-off prototypes, with no reproducibility protocol, and were measured with a detector for which no limits are defined in this band. This repository restates those results as falsifiable claims and tests them on a bench built from scratch, with everything published — raw captures, metadata, processing code — so the work can be contested rather than believed.
+Between 2015 and 2019 I worked in a university EMC lab and published a series of papers and patents on this subject. The ideas hold up; the discipline does not. The results rested on one-off prototypes, with no reproducibility protocol, and were measured with a detector for which no limits are defined in this band.
 
-The five claims and their known weaknesses: [`claims.md`](claims.md).
+The goal here is to re-test those results on a bench I build myself, and to publish everything — raw captures, processing code, conclusions — so the work can be contested rather than believed.
 
-## Subject
+## What I claimed, and what is wrong with it
 
-How individual elements of the power stage generate conducted noise, how much each contributes, how operating mode and topology change that, and how EMC measures interact with converter efficiency.
+**C1 — Three-zone spectral model.** The spectrum divides into 0.15–3, 3–16 and 16–30 MHz, each zone traceable to a distinct physical source. *The boundaries are not universal — they follow from the switching frequency, diode recovery times and layout of my particular prototypes.*
 
-The thesis running through the original cycle, and through this one: emission should be suppressed during design, by choosing operating modes and components that emit least, and only then should a filter be designed — of the minimum necessary complexity. The practice it argues against treats EMC last, curing non-compliance by growing the filter, and pays for it in mass, volume and cost.
+**C2 — Quantitative map of element contributions.** Each element of the power stage contributes a quantifiable amount to the total. *Adding an element does not add only its own parasitics; it changes the whole network. The difference between spectra before and after adding a diode is not the diode's emission. Measured with an RMS detector, while limits in this band are defined for quasi-peak and average.*
 
-## Method
+**C3 — Source localisation and inverse identification.** Topology and parameters — switching frequency, duty cycle, transition times, parasitic capacitances — can be read off the shape of the spectrum. *Validated against the same prototypes it was derived from. That is fitting, not prediction.*
 
-The original work built a prototype one element at a time and captured the spectrum at each step, attributing the change to the element just added. That attribution is the method's weak point and is treated explicitly in `claims.md` (C2).
+**C4 — Snubbers on MOSFETs are an EMC measure, not an efficiency measure.** Up to roughly 1.5 kW a snubber does not improve efficiency but substantially improves the electromagnetic picture. *The 1.5 kW figure stands for the argument rather than a measured threshold, and devices have moved on in ten years.*
 
-This project keeps the incremental idea and adds what was missing: a single unified prototype platform so that configurations differ only in the variable under test; 9 kHz resolution bandwidth with quasi-peak and average detectors implemented in software and validated against reference signals; each claim swept across a stated parameter rather than tested at one operating point; and raw data published alongside every conclusion.
+**C5 — Topological hierarchy by conducted emission.** PWM inverter, LLC converter and phase-shifted inverter can be ranked, phase-shifted best. *Declared on a single criterion, with layout uncontrolled between prototypes and the conditions of comparison unstated.*
+
+All five share one root weakness: few prototypes, no reproducibility protocol, a detector without defined limits here. One remedy covers them — a new dataset with fixed geometry, standards-referenced measurement, and deliberate parameter variation.
 
 ## What this bench is not
 
-There is no shielded enclosure and no calibrated measuring receiver. The ambient spectrum in this band carries broadcast signals and emissions from neighbouring equipment, so every measurement is preceded by an ambient baseline.
-
-The consequence is a hard limit on what may be concluded here. Relative comparisons under a fixed, documented geometry — this configuration against that one, measured minutes apart on the same setup — are sound and reproducible by anyone who rebuilds the bench. Absolute levels stated against regulatory limits are not: that requires a calibrated receiver in a controlled environment, and nothing in this repository should be read as a compliance result. Every deviation from the standard method is written down before the results, not after.
+No shielded enclosure, no calibrated measuring receiver. Relative comparisons under a fixed, documented geometry are sound and reproducible. Absolute levels against regulatory limits are not — nothing here is a compliance result.
 
 ## Original body of work
 
-Published in Russian, 2015–2019, two of them also in Springer translation. Everything in this project cites these by ID.
-
-Publisher typeset versions are not redistributed here — those rights sit with the journals. Links point to legally available copies. Patent texts are public documents and are included in full.
-
-### Papers
+Published in Russian, 2015–2019; two papers also in Springer translation. Cited throughout by ID.
 
 | ID | Title | Venue | Year |
 |---|---|---|---|
@@ -46,37 +42,26 @@ Publisher typeset versions are not redistributed here — those rights sit with 
 | Z2017-02 | Dynamic processes in non-isolated single-ended converters under soft switching | *Silovaya Elektronika*, no. 3, pp. 52–55 | 2017 |
 | Z2019-01 | Conducted emission in push-pull converters with hard and soft switching | *Silovaya Elektronika*, no. 2, pp. 62–65 | 2019 |
 
-DOIs where assigned: Z2016-02 — `10.21293/1818-0442-2016-19-1-14-17`; Z2016-04 — `10.21293/1818-0442-2016-19-2-90-93`; Z2017-01 — `10.21293/1818-0442-2017-20-1-121-125`.
+DOIs: Z2016-02 — `10.21293/1818-0442-2016-19-1-14-17`; Z2016-04 — `10.21293/1818-0442-2016-19-2-90-93`; Z2017-01 — `10.21293/1818-0442-2017-20-1-121-125`.
 
-Z2015-02 is the metrological paper of the cycle — it defines how the measurements in the rest of the work were taken. The Russian original has not been retrieved; the Springer translation below is available. Z2015-03 and Z2016-05 have likewise not been retrieved in the original.
+Translations: Z2015-02 as *An appraisal of matching devices for measurements of asymmetrical industrial radio interference*, Measurement Techniques, 2015, 58(6), p. 702. Z2016-05 as *Working conditions of a converter installation with electromagnetic compatibility*, Russian Electrical Engineering, 2016, 87, pp. 14–16.
 
-### Translated English editions (Scopus-indexed)
+Publisher typeset versions are not redistributed here. Z2015-02, Z2015-03 and Z2016-05 I have not been able to retrieve in the original.
 
-- Zagorodskikh E.V., Skvortsov V.A. An appraisal of matching devices for measurements of asymmetrical industrial radio interference. *Measurement Techniques*, 2015, vol. 58, no. 6, p. 702. — translation of Z2015-02.
-- Zagorodskikh E.V., Skvortsov V.A. Working conditions of a converter installation with electromagnetic compatibility. *Russian Electrical Engineering*, 2016, vol. 87, pp. 14–16. — translation of Z2016-05.
+| ID | Patent | Number | Year | |
+|---|---|---|---|---|
+| P2015-01 | Lithotripter transmission cable with improved shielding | RU 159 076 U1 | 2015 | [`RU159076.pdf`](patents/RU159076.pdf) |
+| P2017-01 | Buck converter with a non-dissipative snubber | RU 174 772 U1 | 2017 | [`RU174772.pdf`](patents/RU174772.pdf) |
+| P2020-01 | Asymmetric-current power supply for electrochemical processes | RU 203 341 U1 | 2020 | [`RU203341.pdf`](patents/RU203341.pdf) |
 
-### Related
+Also: *Electromagnetic Compatibility of Electronic Devices*, teaching guide, TUSUR, 2016 (co-author).
 
-Teaching guide: *Electromagnetic Compatibility of Electronic Devices*, TUSUR, 2016, 45 pp. (co-author) — the lab manual the measurement practice of this cycle was taught from.
+## How the work is published
 
-Earlier student-level papers (2012–2013) on asymmetric-current supplies are not part of this review; the line of work they belong to ends in patent P2020-01.
+This file is the starting position and stays as written.
 
-### Patents (utility models)
-
-| ID | Subject | Number | Filed | Published | File |
-|---|---|---|---|---|---|
-| P2015-01 | Lithotripter transmission cable with improved shielding | RU 159 076 U1 | 2015 | 2016 | [`RU159076.pdf`](patents/RU159076.pdf) |
-| P2017-01 | Buck converter with a non-dissipative snubber | RU 174 772 U1 | 2017 | 2017 | [`RU174772.pdf`](patents/RU174772.pdf) |
-| P2020-01 | Asymmetric-current power supply for electrochemical processes | RU 203 341 U1 | 2020 | 2021 | [`RU203341.pdf`](patents/RU203341.pdf) |
-
-## How this repository is organised
-
-Each stage of the work is a folder, written once and left alone. Documents are dated snapshots, not living pages: when a later result changes the picture, it arrives as a new file that references the old one by ID. Nothing is silently revised.
-
-`claims.md` is the single exception. Its status column is meant to move — that is the whole point of keeping a claims register — and each change carries a link to the data behind it.
-
-Planned: `bench/` (LISN, electronic load, transient limiter), `calibration/`, `data/`, `tools/`.
+Each stage of the work gets its own folder named by the date it was done, with its own README inside: what was done that day, what worked, what did not. Raw captures and notes live in the same folder.
 
 ## Licence
 
-Text, data and figures: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Code: [MIT](LICENSE). Use either freely, with attribution.
+Text, data and figures: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Code: [MIT](LICENSE).
