@@ -2,7 +2,7 @@
 
 Conducted emissions from switching voltage converters, 150 kHz – 30 MHz.
 
-Between 2015 and 2019 I worked in a university EMC lab and published a series of papers and patents on this subject. The ideas hold up; the discipline does not. The results rested on one-off prototypes, with no reproducibility protocol, and were measured with a detector for which no limits are defined in this band.
+Between 2015 and 2019 I worked in a university EMC lab and published a series of papers and patents on this subject. I think the ideas hold up; the discipline does not. The results rested on one-off prototypes, with no reproducibility protocol, and were measured with a detector for which no limits are defined in this band.
 
 The goal here is to re-test those results on a bench I build myself, and to publish everything — raw captures, processing code, conclusions — so the work can be contested rather than believed.
 
