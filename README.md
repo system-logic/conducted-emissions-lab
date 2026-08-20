@@ -26,7 +26,7 @@ The consequence is a hard limit on what may be concluded here. Relative comparis
 
 ## Original body of work
 
-Published in Russian, 2015–2019. Everything in this project cites these by ID.
+Published in Russian, 2015–2019, two of them also in Springer translation. Everything in this project cites these by ID.
 
 Publisher typeset versions are not redistributed here — those rights sit with the journals. Links point to legally available copies. Patent texts are public documents and are included in full.
 
@@ -48,7 +48,18 @@ DOIs where assigned: Z2016-02 — `10.21293/1818-0442-2016-19-1-14-17`; Z2016-04
 
 Z2015-02 is the metrological paper of the cycle — it defines how the measurements in the rest of the work were taken. I have not been able to retrieve a copy; the gap is recorded rather than hidden.
 
-Some of this work also appeared in translated English editions indexed in Scopus. <Fill in which, once confirmed.>
+### Translated English editions (Scopus-indexed)
+
+Two papers of the cycle appeared in Springer translation:
+
+- Zagorodskikh E.V., Skvortsov V.A. An appraisal of matching devices for measurements of asymmetrical industrial radio interference. *Measurement Techniques*, 2015, vol. 58, no. 6, p. 702. — translation of Z2015-02.
+- Zagorodskikh E.V., Skvortsov V.A. Working conditions of a converter installation with electromagnetic compatibility. *Russian Electrical Engineering*, 2016, vol. 87, pp. 14–16. — translation of Z2016-05.
+
+| ID | Title | Venue | Year |
+|---|---|---|---|
+| Z2016-05 | <Russian original — *Elektrotekhnika*, 2016> | *Elektrotekhnika* | 2016 |
+
+Z2016-05 is listed from its translated edition; the Russian original has not been retrieved.
 
 ### Patents (utility models)
 
