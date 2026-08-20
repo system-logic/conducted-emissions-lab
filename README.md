@@ -65,9 +65,9 @@ Earlier student-level papers (2012–2013) on asymmetric-current supplies are no
 
 | ID | Subject | Number | Filed | Published | File |
 |---|---|---|---|---|---|
-| P2015-01 | Lithotripter transmission cable with improved shielding | RU 159 076 U1 | 2015 | 2016 | [`patents/RU159076.pdf`](patents/) |
-| P2017-01 | Buck converter with a non-dissipative snubber | RU 174 772 U1 | 2017 | 2017 | [`patents/RU174772.pdf`](patents/) |
-| P2020-01 | Asymmetric-current power supply for electrochemical processes | RU 203 341 U1 | 2020 | 2021 | [`patents/RU203341.pdf`](patents/) |
+| P2015-01 | Lithotripter transmission cable with improved shielding | RU 159 076 U1 | 2015 | 2016 | [`RU159076.pdf`](patents/RU159076.pdf) |
+| P2017-01 | Buck converter with a non-dissipative snubber | RU 174 772 U1 | 2017 | 2017 | [`RU174772.pdf`](patents/RU174772.pdf) |
+| P2020-01 | Asymmetric-current power supply for electrochemical processes | RU 203 341 U1 | 2020 | 2021 | [`RU203341.pdf`](patents/RU203341.pdf) |
 
 ## How this repository is organised
 
