@@ -36,30 +36,30 @@ Publisher typeset versions are not redistributed here — those rights sit with 
 |---|---|---|---|
 | Z2015-01 | Analysis of PWM-converter interference emitted to the mains in the 0.15–3 MHz band | *Tekhnologii EMS*, no. 1(52), pp. 21–27 | 2015 |
 | Z2015-02 | Evaluation of matching networks for measuring asymmetric industrial radio noise | *Metrologiya*, no. 2, pp. 64–71 | 2015 |
+| Z2015-03 | Analysis of conducted emission from a high-frequency converter | *Prospects of Fundamental Sciences Development*, XII Int. Conf., TPU, pp. 1485–1487 | 2015 |
 | Z2016-01 | On sources of conducted emission in the design of a bridge voltage inverter | *Tekhnologii EMS*, no. 1(56), pp. 41–48 | 2016 |
 | Z2016-02 | Conducted emission of a bridge voltage inverter in current-stabilisation mode and ways to reduce it | *Proceedings of TUSUR*, vol. 19, no. 1, pp. 14–17 | 2016 |
 | Z2016-03 | Parameter selection for a non-isolated voltage converter with EMC in mind | *Silovaya Elektronika*, no. 3, pp. 72–77 | 2016 |
 | Z2016-04 | Soft-switching methods for the transistor switches of a boost converter in a spacecraft power system | *Proceedings of TUSUR*, vol. 19, no. 2, pp. 90–93 | 2016 |
+| Z2016-05 | Parameter selection for a converter installation under electromagnetic compatibility constraints | *Elektrotekhnika*, no. 1, pp. 16a–18 | 2016 |
 | Z2017-01 | Battery charge module for space applications | *Proceedings of TUSUR*, vol. 20, no. 1, pp. 121–125 | 2017 |
 | Z2017-02 | Dynamic processes in non-isolated single-ended converters under soft switching | *Silovaya Elektronika*, no. 3, pp. 52–55 | 2017 |
 | Z2019-01 | Conducted emission in push-pull converters with hard and soft switching | *Silovaya Elektronika*, no. 2, pp. 62–65 | 2019 |
 
 DOIs where assigned: Z2016-02 — `10.21293/1818-0442-2016-19-1-14-17`; Z2016-04 — `10.21293/1818-0442-2016-19-2-90-93`; Z2017-01 — `10.21293/1818-0442-2017-20-1-121-125`.
 
-Z2015-02 is the metrological paper of the cycle — it defines how the measurements in the rest of the work were taken. I have not been able to retrieve a copy; the gap is recorded rather than hidden.
+Z2015-02 is the metrological paper of the cycle — it defines how the measurements in the rest of the work were taken. The Russian original has not been retrieved; the Springer translation below is available. Z2015-03 and Z2016-05 have likewise not been retrieved in the original.
 
 ### Translated English editions (Scopus-indexed)
-
-Two papers of the cycle appeared in Springer translation:
 
 - Zagorodskikh E.V., Skvortsov V.A. An appraisal of matching devices for measurements of asymmetrical industrial radio interference. *Measurement Techniques*, 2015, vol. 58, no. 6, p. 702. — translation of Z2015-02.
 - Zagorodskikh E.V., Skvortsov V.A. Working conditions of a converter installation with electromagnetic compatibility. *Russian Electrical Engineering*, 2016, vol. 87, pp. 14–16. — translation of Z2016-05.
 
-| ID | Title | Venue | Year |
-|---|---|---|---|
-| Z2016-05 | <Russian original — *Elektrotekhnika*, 2016> | *Elektrotekhnika* | 2016 |
+### Related
 
-Z2016-05 is listed from its translated edition; the Russian original has not been retrieved.
+Teaching guide: *Electromagnetic Compatibility of Electronic Devices*, TUSUR, 2016, 45 pp. (co-author) — the lab manual the measurement practice of this cycle was taught from.
+
+Earlier student-level papers (2012–2013) on asymmetric-current supplies are not part of this review; the line of work they belong to ends in patent P2020-01.
 
 ### Patents (utility models)
 
