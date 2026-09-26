@@ -62,6 +62,12 @@ This file is the starting position and stays as written.
 
 Each stage of the work gets its own folder, named by the date it was done, with its own README describing that stage — whatever it happened to consist of. Raw captures and notes live in the same folder.
 
+## Stages
+
+| Folder | Stage |
+|---|---|
+| [`2026-09-26-lab-bench-preparation`](2026-09-26-lab-bench-preparation/) | Lab bench preparation: LISN, limiter, instrument calibration, bench background |
+
 ## Licence
 
-Text, data and figures: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Code: [MIT](LICENSE).
+Text, data and figures: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) (full text: [`LICENSE-CC-BY-4.0.txt`](LICENSE-CC-BY-4.0.txt)). Code: [MIT](LICENSE).

@@ -1,0 +1,24 @@
+# Operating system
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Office temporary and lock files
+~$*
+*.tmp
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# Video: too large for git, kept outside the repository
+*.mp4
+*.mov
+*.mkv
