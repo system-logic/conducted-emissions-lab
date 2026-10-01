@@ -86,12 +86,11 @@ The 1 MHz target of 26.8 Ω is the circuit value at the marker frequency 1.009 M
 the circuit gives the 26.64 Ω of the standard.
 
 Difference between the built LISN and the circuit of the standard. The circuit of the standard has 1 kΩ across
-the measurement port, in parallel with the 50 Ω load: 47.6 Ω. The built measurement branch, as far as recorded, has no 1 kΩ:
+the measurement port, in parallel with the 50 Ω load: 47.6 Ω. The built measurement branch has no 1 kΩ:
 after the 0.1 µF capacitor comes the attenuator 100/68/100 Ω, whose shunt resistor also gives the capacitor a path to discharge.
 Loaded with 50 Ω, the attenuator presents a calculated 50.3 Ω. Calculated impedance of the as-built circuit against
 the circuit of the standard: 4.78 against 4.79 Ω at 150 kHz, 27.04 against 26.64 Ω at 1 MHz,
 49.72 against 47.1 Ω at 10 MHz, 50.26 against 47.56 Ω at 30 MHz. The difference is within the ±20 % tolerance.
-Whether a 1 kΩ resistor is fitted on the boards is to be confirmed by inspection ([open questions](09-open-questions.md)).
 
 Result: from 1 MHz upwards both channels are on target with margin. At 150 kHz without current the impedance is 1 %
 above the upper tolerance limit — this is less than the NanoVNA uncertainty when measuring 5 Ω. Under working current
