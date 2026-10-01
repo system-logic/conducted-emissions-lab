@@ -14,9 +14,8 @@ when reworking converter prototypes.
 
 ## Bench
 
-View from above: the reference plate with the LISN and the limiter on top of it (upper left), TinySA Ultra (left),
-oscilloscope (lower left) and the electronic load with its lid removed (lower right). The aluminium sheet with profiles
-in the centre is the reference plane. The laboratory power supplies are
+View from above: the reference plate — the large aluminium sheet that covers almost the whole table — with the LISN and the limiter on top of it (upper left), TinySA Ultra (left),
+oscilloscope (lower left) and the electronic load with its lid removed (lower right). The laboratory power supplies are
 above the upper edge of the frame.
 
 ![Bench, view from above](bench-photos/bench-overview.jpg)
@@ -87,4 +86,4 @@ The same table is kept in [08-errors.md](08-errors.md).
 | S11 | Reflection measured at port 1 of the vector network analyser |
 | S21 | Transmission from port 1 to port 2 of the vector network analyser |
 | RBW | Resolution bandwidth of the spectrum analyser |
-| Reference plate | The plate on the bench, used in this stage as a common conductor |
+| Reference plate | The large aluminium sheet that covers almost the whole table, used in this stage as a common conductor |
