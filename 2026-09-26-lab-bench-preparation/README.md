@@ -30,8 +30,10 @@ to protective earth**. This is a deliberate state of the bench at the time of th
 not an unfinished item. All results in this folder, including the background measurement,
 were taken in this state.
 
-Earthing the plate, bonding the enclosures to it and the related re-check are planned
-for the second series (see [background protocol, section 6](06-background-protocol.md#66-rework-plan)
+This was done deliberately, in order to close the first series. The second series will begin with a more
+thorough preparation of the bench itself: the background check without a prototype will be repeated,
+this time with full earthing — the plate connected to protective earth and the enclosures
+bonded to it (see [background protocol, section 6](06-background-protocol.md#66-rework-plan)
 and [open questions](09-open-questions.md)).
 
 ## Errors and corrections

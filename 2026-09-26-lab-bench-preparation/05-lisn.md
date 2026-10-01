@@ -1,7 +1,7 @@
 # LISN: channel check
 
 Method: the input terminals (from the power supply) are shorted to the enclosure **inside** the LISN,
-the lid is closed. PORT 1 to the output terminal (centre contact to the terminal, ground to the enclosure next to it,
+the lid is closed, the inductor turns are already fixed with cable ties. PORT 1 to the output terminal (centre contact to the terminal, ground to the enclosure next to it,
 conductors 2.5–3 cm), PORT 2 directly to the BNC of the same channel. Slot 0.
 Impedance (Smith chart, R + L/C) and S21 are read at the same time.
 
@@ -89,7 +89,7 @@ attributed to the instrument uncertainty near a short circuit (5 Ω at 135 kHz i
 **Decided: LISN correction −9.7 dB ±0.5 for both channels across the whole band.
 Together with the 6.1 dB limiter → 15.8 dB to the spectrum analyser input.**
 It is desirable to refine the lower decade by a direct method: generator on the terminal, oscilloscope on the terminal
-and on the BNC, ratio of voltages.
+and on the BNC, ratio of voltages. Postponed to the second video.
 
 ## 5.5. Conclusions
 
@@ -98,10 +98,12 @@ and on the BNC, ratio of voltages.
   in inductance at the terminal 6.11 against 6.08 µH. One correction for both channels.
 - Two checks were deliberately skipped:
   - **under a current of 5 and 10 A** — the only thing that can change is the lower edge, and only
-    towards the target; Kool Mu saturates gradually;
+    towards the target; Kool Mu saturates gradually. Closed on 2026-10-01 by the core datasheet
+    (≈95 % of the inductance retained at 10 A, see [04-lisn-inductor.md](04-lisn-inductor.md#conclusions));
+    a direct check under current is not planned;
   - **leakage between the LISN channels** — the inductors are separate, only the enclosure is shared,
     and in operation the same interference is present on both rails. Return to this if positive and negative start
-    showing the same thing to within a decibel.
+    showing the same thing to within a decibel. Not measured; considered low priority.
 
 Not recorded: type and length of the NanoVNA cables and the adapters; what the PORT 2 cable was terminated with
 at the ISOLN step; room temperature.

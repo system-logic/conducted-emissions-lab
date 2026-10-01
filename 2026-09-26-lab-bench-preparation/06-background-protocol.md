@@ -16,8 +16,10 @@
 | Surroundings | PC a few metres away; load transformer, power supply and PC on the same socket group |
 | Reference plane | the plate on the bench was used as a common conductor, **not connected to protective earth** |
 
-The plate not being earthed is a deliberate state of the bench for the first video; earthing is planned for the second series
-(see [6.6](#66-rework-plan), item 2).
+The plate not being earthed is a deliberate state of the bench for the first video.
+This was done deliberately, in order to close the first series. The second series will begin with a more
+thorough preparation of the bench itself: the background check without a prototype will be repeated,
+this time with full earthing (see [6.6](#66-rework-plan), item 2).
 
 Levels at 150 kHz were read from the screenshots by the grid, accuracy ≈5 dB. The marker on the screenshots was
 on the hump in the middle of the band, not on the trace maximum.

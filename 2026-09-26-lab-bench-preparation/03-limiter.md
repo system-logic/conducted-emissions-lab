@@ -55,4 +55,10 @@ The "input" and "output" labels on the enclosure had been applied the wrong way 
 a double pass through the 6 dB attenuator). The unit was built as described, with the capacitor at the input.
 The labels have been corrected; the tables above are given with the correct assignment.
 
-Not recorded: diode type (1N5711 or BAS316).
+Diodes: silicon switching diodes; the package looks like SOD323, with a white cathode mark and the marking A6
+(BAS316 in the notes). In the BAS16 family datasheet that was at hand (dated 2009-09-28) the marking A6 belongs to
+BAS16-02W (package SCD80) and BAS16-02L (package TSLP-2-1), and the SOD323 variant is marked differently, so the exact
+type is not confirmed by a datasheet. Values from that datasheet for the family: forward voltage max 715 mV at 1 mA,
+capacitance max 2 pF at 0 V and 1 MHz.
+
+Not established: the exact type and the manufacturer of the diodes (no access to the packaging). Left for the second video.

@@ -9,6 +9,9 @@
 Reading on the screen + 15.8 dB = voltage at the port of the standard LISN, which
 is compared with the limits.
 
+The LISN correction in the lower decade (150 kHz – 1 MHz) is to be refined by a direct method
+(generator and oscilloscope); postponed to the second video.
+
 Bench floor (step 4, at the port): 41 dBµV at 150 kHz, 16–21 dBµV above 1 MHz.
 Working background (step 9, at the port): ≈56 dBµV at 150 kHz, 21–26 dBµV above 10 MHz.
 
