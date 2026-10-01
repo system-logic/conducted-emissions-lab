@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 480" width="1160" height="480">
+<rect width="1160" height="480" fill="#fff"/>
+<text x="20" y="28" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" text-anchor="start" dominant-baseline="middle">LISN: one channel (the positive and negative channels are identical, except for the fuse)</text>
+<circle cx="70" cy="130" r="4" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="70" y="114" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Input terminal</text>
+<polyline points="74,130 125,130" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="125" y="121" width="50" height="18" fill="#fff" stroke="#000" stroke-width="2"/>
+<polyline points="125,130 175,130" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="150" y="156" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Fuse</text>
+<polyline points="175,130 400,130" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="240" cy="130" r="3.5" fill="#000" stroke="#000" stroke-width="2"/>
+<polyline points="240.0,130 240.0,186.0" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="240.0,194.0 240.0,250" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="226.0,186.0 254.0,186.0" fill="none" stroke="#000" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="226.0,194.0 254.0,194.0" fill="none" stroke="#000" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="260.0" y="190.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="start" dominant-baseline="middle">1 µF</text>
+<polyline points="226,250 254,250" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="231,255 249,255" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="236,260 244,260" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="330" cy="130" r="3.5" fill="#000" stroke="#000" stroke-width="2"/>
+<polyline points="330.0,130 330.0,186.0" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="330.0,194.0 330.0,250" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="316.0,186.0 344.0,186.0" fill="none" stroke="#000" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="316.0,194.0 344.0,194.0" fill="none" stroke="#000" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="350.0" y="190.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="start" dominant-baseline="middle">Feed-through</text>
+<text x="350" y="208" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="start" dominant-baseline="middle">HFC-2L-CH</text>
+<polyline points="316,250 344,250" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="321,255 339,255" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="326,260 334,260" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="400.0,130.0 400.6,125.5 402.3,121.2 405.1,117.6 408.8,114.8 413.0,113.1 417.5,112.5 422.0,113.1 426.2,114.8 429.9,117.6 432.7,121.2 434.4,125.5 435.0,130.0 435.0,130.0 435.6,125.5 437.3,121.2 440.1,117.6 443.8,114.8 448.0,113.1 452.5,112.5 457.0,113.1 461.2,114.8 464.9,117.6 467.7,121.2 469.4,125.5 470.0,130.0 470.0,130.0 470.6,125.5 472.3,121.2 475.1,117.6 478.8,114.8 483.0,113.1 487.5,112.5 492.0,113.1 496.2,114.8 499.9,117.6 502.7,121.2 504.4,125.5 505.0,130.0 505.0,130.0 505.6,125.5 507.3,121.2 510.1,117.6 513.8,114.8 518.0,113.1 522.5,112.5 527.0,113.1 531.2,114.8 534.9,117.6 537.7,121.2 539.4,125.5 540.0,130.0" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="470.0" y="98.5" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" dominant-baseline="middle">5 µH</text>
+<polyline points="540,130 1016,130" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="1020" cy="130" r="4" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="1020" y="114" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Output terminal</text>
+<circle cx="610" cy="130" r="3.5" fill="#000" stroke="#000" stroke-width="2"/>
+<polyline points="610.0,130 610.0,196.0" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="610.0,204.0 610.0,270" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="596.0,196.0 624.0,196.0" fill="none" stroke="#000" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="596.0,204.0 624.0,204.0" fill="none" stroke="#000" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="630.0" y="200.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="start" dominant-baseline="middle">0.1 µF</text>
+<polyline points="610,270 720,270" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="720" cy="270" r="3.5" fill="#000" stroke="#000" stroke-width="2"/>
+<polyline points="720.0,270 720.0,305.0" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="720.0,355.0 720.0,390" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="711.0" y="305.0" width="18" height="50" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="736.0" y="330.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="start" dominant-baseline="middle">100 Ω</text>
+<polyline points="706,390 734,390" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="711,395 729,395" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="716,400 724,400" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="720,270.0 775.0,270.0" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="825.0,270.0 880,270.0" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="775.0" y="261.0" width="50" height="18" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="800.0" y="250.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" dominant-baseline="middle">68 Ω</text>
+<circle cx="880" cy="270" r="3.5" fill="#000" stroke="#000" stroke-width="2"/>
+<polyline points="880.0,270 880.0,305.0" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="880.0,355.0 880.0,390" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="871.0" y="305.0" width="18" height="50" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="896.0" y="330.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="start" dominant-baseline="middle">100 Ω</text>
+<polyline points="866,390 894,390" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="871,395 889,395" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="876,400 884,400" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="880,270 1016,270" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="1020" cy="270" r="4" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="1020" y="254" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Measurement output, BNC</text>
+<text x="20" y="430" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="start" dominant-baseline="middle">The ground symbol is the enclosure. The fuse is in the positive channel only. The feed-through capacitor is in the partition</text>
+<text x="20" y="452" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="start" dominant-baseline="middle">between the input side and the inductors. Input terminal: power supply side. Output terminal: side of the device being measured.</text>
+</svg>

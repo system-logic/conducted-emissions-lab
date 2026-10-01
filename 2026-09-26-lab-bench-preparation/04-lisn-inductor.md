@@ -8,6 +8,8 @@ Marking on the core: "197001 77109A7".
 Winding: 6 turns, wire 5 × Ø0.6 mm bare copper in a common heat-shrink sleeve, cross-section ≈1.4 mm²,
 resistance ≈6 mΩ (at 10 A a drop of 60 mV, heating 0.6 W). The turns are fixed with nylon cable ties.
 
+The finished inductors in the enclosure are shown in [05-lisn.md](05-lisn.md#circuit-and-construction).
+
 Marker format: Smith chart, R + L/C (series model), PORT 1 only.
 
 | Frequency | 5 turns: L | 5 turns: R | 6 turns: L | 6 turns: R |

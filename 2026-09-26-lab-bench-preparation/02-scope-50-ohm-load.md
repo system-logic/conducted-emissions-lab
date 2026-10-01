@@ -3,6 +3,10 @@
 The Micsig TO1104 has no 50 Ω input, so the load is external. Conditions: oscilloscope on battery,
 other channels and USB disconnected, DC coupling.
 
+The loads used are marked "LOAD RESISTOR 50 Ω, P57, Bandwidth: DC~1GHz, Power Supply: 1 Watt, Input Voltage: 10V DC".
+
+![50 Ω feed-through loads](bench-photos/feed-through-loads-50-ohm.jpg)
+
 Input model: 50 Ω in parallel with the specified 14.5 pF (1 MΩ is negligible next to 50 Ω).
 
 | Frequency | S11 measured | S11 calculated |

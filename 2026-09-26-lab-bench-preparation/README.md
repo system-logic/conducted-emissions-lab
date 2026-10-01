@@ -12,11 +12,19 @@ in the 150 kHz – 30 MHz band (voltage method, reference standard CISPR 25, aut
 The purpose of the bench is not certification, but a repeatable "before and after" comparison
 when reworking converter prototypes.
 
+## Bench
+
+View from above: the reference plate with the LISN and the limiter on top of it (upper left), TinySA Ultra (left),
+oscilloscope (lower left) and the electronic load with its lid removed (lower right). The laboratory power supplies are
+above the upper edge of the frame.
+
+![Bench, view from above](bench-photos/bench-overview.jpg)
+
 ## Components
 
 | Unit | What it is | State |
 |---|---|---|
-| Line impedance stabilisation network (LISN), 2 channels | 5 µH, 0.1 µF, 1 kΩ, attenuator 100/68/100 Ω, BNC | Built, measured |
+| Line impedance stabilisation network (LISN), 2 channels | 5 µH, 1 µF, 0.1 µF, attenuator 100/68/100 Ω, BNC | Built, measured |
 | Limiter, 2 channels in one enclosure | 100 nF → attenuator 150/39/150 Ω → 2 anti-parallel diodes BAS316 → BNC | Built, measured |
 | Electronic load | Own design, with protection (bridge, TVS diode, thyristor BT152-800R driven by comparator LM393, driver KP501B) | Built |
 | Vector network analyser | NanoVNA-H4 rev 4.4 (ZeeTK mixer, hugen firmware based on DiSlord) | Calibrated |

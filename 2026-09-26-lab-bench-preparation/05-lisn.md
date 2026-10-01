@@ -1,5 +1,28 @@
 # LISN: channel check
 
+## Circuit and construction
+
+Two channels, positive and negative, in one enclosure: 5 µH inductor between the input and output terminals,
+1 µF from each input terminal to the enclosure, 0.1 µF in the measurement branch, attenuator 100/68/100 Ω,
+BNC measurement output. The positive channel has a fuse at the input.
+
+A partition divides the enclosure into the input side and the side with the inductors and the measurement boards;
+each line passes through the partition via a feed-through capacitor HFC-2L-CH (a type made for magnetrons). The grounds of the measurement boards are bonded
+to the enclosure at their mounting screws.
+
+![LISN: one of two identical channels](schematics/lisn-channel.svg)
+
+Inside view of the finished LISN: input terminals, fuse and 1 µF capacitors (left), the partition with the feed-through capacitors,
+the inductors with 6 turns fixed with cable ties, the measurement boards at the BNC connectors (right).
+
+![LISN, inside view](bench-photos/lisn-inside-final.jpg)
+
+An earlier stage of assembly, with a different winding on the cores (not the final one):
+
+![LISN, earlier stage of assembly](bench-photos/lisn-inside-early-winding.jpg)
+
+## Method
+
 Method: the input terminals (from the power supply) are shorted to the enclosure **inside** the LISN,
 the lid is closed, the inductor turns are already fixed with cable ties. PORT 1 to the output terminal (centre contact to the terminal, ground to the enclosure next to it,
 conductors 2.5–3 cm), PORT 2 directly to the BNC of the same channel. Slot 0.
@@ -44,8 +67,8 @@ sweep point is 135 kHz; the working band of the bench starts at 150 kHz.
 ## 5.3. Comparison with the CISPR 25 curve
 
 The target curve was calculated from the LISN circuit in the annex to CISPR 25: 5 µH inductor, 0.1 µF capacitor,
-1 kΩ resistor, measurement port loaded with 50 Ω, input terminals shorted — that is, from the same circuit
-and under the same conditions in which the LISN was built and measured. Tolerance ±20 %, check band 0.1–100 MHz.
+1 kΩ resistor, measurement port loaded with 50 Ω, input terminals shorted — that is, under the same
+conditions in which the LISN was measured (the built measurement branch differs from this circuit, see below). Tolerance ±20 %, check band 0.1–100 MHz.
 
 Checked on 2026-10-01 against GOST CISPR 25—2023 (identical to CISPR 25:2021), Annex E, Table E.1:
 the circuit, the measurement conditions, the tolerance and the check band match. The nominal values
@@ -61,6 +84,14 @@ and limits from the standard are given next to the calculated ones.
 
 The 1 MHz target of 26.8 Ω is the circuit value at the marker frequency 1.009 MHz; at exactly 1 MHz
 the circuit gives the 26.64 Ω of the standard.
+
+Difference between the built LISN and the circuit of the standard. The circuit of the standard has 1 kΩ across
+the measurement port, in parallel with the 50 Ω load: 47.6 Ω. The built measurement branch, as far as recorded, has no 1 kΩ:
+after the 0.1 µF capacitor comes the attenuator 100/68/100 Ω, whose shunt resistor also gives the capacitor a path to discharge.
+Loaded with 50 Ω, the attenuator presents a calculated 50.3 Ω. Calculated impedance of the as-built circuit against
+the circuit of the standard: 4.78 against 4.79 Ω at 150 kHz, 27.04 against 26.64 Ω at 1 MHz,
+49.72 against 47.1 Ω at 10 MHz, 50.26 against 47.56 Ω at 30 MHz. The difference is within the ±20 % tolerance.
+Whether a 1 kΩ resistor is fitted on the boards is to be confirmed by inspection ([open questions](09-open-questions.md)).
 
 Result: from 1 MHz upwards both channels are on target with margin. At 150 kHz without current the impedance is 1 %
 above the upper tolerance limit — this is less than the NanoVNA uncertainty when measuring 5 Ω. Under working current
