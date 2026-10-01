@@ -62,30 +62,36 @@ Screenshots: 14 files, one per step (step numbering matches the table), see [tin
 
 ## 6.5. What this means for measurements
 
-CISPR 25 limits, voltage method, peak detector, at the port of the standard LISN
-(**quoted from memory, check against the text of the standard**):
+CISPR 25 limits, voltage method, peak detector, dBµV at the port of the standard LISN
+(GOST CISPR 25—2023 (identical to CISPR 25:2021), Table 6, RBW 9 kHz). The standard gives these values as examples:
+the class is agreed between the customer and the supplier.
 
 | Band | Class 1 | Class 2 | Class 3 | Class 4 | Class 5 |
 |---|---|---|---|---|---|
 | 150–300 kHz | 110 | 100 | 90 | 80 | 70 |
-| 0.53–1.8 MHz | 86 | 76 | 66 | 56 | 46 |
-| 5.9–6.2 MHz | 77 | 67 | 57 | 47 | 37 |
-| 26–28 MHz | 68 | 58 | 48 | 38 | 28 |
+| 0.53–1.8 MHz | 86 | 78 | 70 | 62 | 54 |
+| 5.9–6.2 MHz | 77 | 71 | 65 | 59 | 53 |
+| 26–28 MHz | 68 | 62 | 56 | 50 | 44 |
 
-Quasi-peak limits are 13 dB lower, average limits 20 lower.
+In these bands quasi-peak limits are 13 dB lower, average limits 20 dB lower.
+
+Corrected on 2026-10-01. The first version of this table was quoted from memory with a 10 dB step
+between classes in every band; in the standard the step is 10 dB only at 150–300 kHz
+(see [error log](08-errors.md)). The margin above 10 MHz below was recalculated accordingly.
 
 In the working state (step 9, PC off) the background is ≈40 dBµV on the screen at 150 kHz,
 that is **≈56 dBµV at the standard port against a class 5 limit of 70 — a margin of 14 dB**.
-Above 10 MHz the floor is 5–10 on the screen (21–26 at the port) against a class 5 limit of 28 at 26–30 MHz:
-there is no margin only for class 5 and only in this segment; for class 4 and below the margin is 12 dB or more.
+Above 10 MHz the floor is 5–10 on the screen (21–26 at the port) against a class 5 limit of 44 at 26–28 MHz:
+a margin of 18–23 dB for class 5, and more for the other classes.
 
-The comb from the PC (up to 45 on the screen, 61 at the port) exceeds the limits of classes 3–5 in the 10–30 MHz band.
+The comb from the PC (up to 45 on the screen, 61 at the port) exceeds the limits of classes 3–5
+at 26–28 MHz (56, 50 and 44).
 This is the only source without whose removal measurement is impossible.
 
 ## 6.6. Rework plan
 
 1. **Switch the PC off during measurements — mandatory.**
-2. Geometry according to the method (desirable, for margin at class 5 at the top and for repeatability):
+2. Geometry according to the method (desirable, for repeatability):
    the plate connected to protective earth with a 2.5 mm² cable; the LISN and load enclosures
    bonded to the plate with short wide straps (or pressed against it); leads from the terminal to the prototype
    20–30 cm, pressed against the plate. Check: steps 4 and 13, difference at 150 kHz less than 5 dB;

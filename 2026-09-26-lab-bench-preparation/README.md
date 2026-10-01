@@ -47,6 +47,7 @@ The same table is kept in [08-errors.md](08-errors.md).
 | TinySA grid reading error of 35 dB | The marker showed 36.6 dBµV, while the estimate from the grid gave 75 | All levels re-read from the screenshots, conclusions rewritten |
 | Core dimensions in early notes (Ø100 mm, magnetic path 25 cm) | Marking 0077109A7 and physical measurement: 58 × 36 × 14 mm, path 14.3 cm | Inductance drop under current recalculated |
 | First channel isolation reading −90…−100 dB | The instrument sweep had stopped, the picture was frozen | Re-measured: no worse than −85 dB |
+| CISPR 25 limits quoted from memory with a 10 dB step between classes in every band | Check against GOST CISPR 25—2023, Table 6: the step is 10 dB only at 150–300 kHz, 8 dB at 0.53–1.8 MHz, 6 dB at 5.9–6.2 and 26–28 MHz | Limits table replaced, margin above 10 MHz recalculated: 18–23 dB for class 5 instead of "no margin" |
 
 ## Documents
 

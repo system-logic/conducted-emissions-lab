@@ -43,18 +43,24 @@ sweep point is 135 kHz; the working band of the bench starts at 150 kHz.
 
 ## 5.3. Comparison with the CISPR 25 curve
 
-The text of the standard is not available in open access. The target curve was calculated from the LISN circuit
-in the annex to CISPR 25: 5 µH inductor, 0.1 µF capacitor, 1 kΩ resistor, measurement port
-loaded with 50 Ω, input terminals shorted — that is, from the same circuit and under the same conditions
-in which the LISN was built and measured. Tolerance ±20 %, check band 0.1–100 MHz.
+The target curve was calculated from the LISN circuit in the annex to CISPR 25: 5 µH inductor, 0.1 µF capacitor,
+1 kΩ resistor, measurement port loaded with 50 Ω, input terminals shorted — that is, from the same circuit
+and under the same conditions in which the LISN was built and measured. Tolerance ±20 %, check band 0.1–100 MHz.
 
-| Frequency | Target from circuit | Tolerance ±20 % | Measured (positive channel) |
-|---|---|---|---|
-| 135 kHz | 4.3 Ω | 3.4–5.2 | 5.2 (+21 %) |
-| 150 kHz | 4.8 Ω | 3.8–5.7 | ≈5.8 (+21 %) |
-| 1 MHz | 26.8 Ω | 21–32 | 28.8 (+7 %) |
-| 10 MHz | 47.1 Ω | 38–57 | 46.2 (−2 %) |
-| 30 MHz | 47.5 Ω | 38–57 | ≈48 (+1 %) |
+Checked on 2026-10-01 against GOST CISPR 25—2023 (identical to CISPR 25:2021), Annex E, Table E.1:
+the circuit, the measurement conditions, the tolerance and the check band match. The nominal values
+and limits from the standard are given next to the calculated ones.
+
+| Frequency | Target from circuit | Tolerance ±20 % | Nominal in the standard | Limits in the standard | Measured (positive channel) |
+|---|---|---|---|---|---|
+| 135 kHz | 4.3 Ω | 3.4–5.2 | not in the table | not in the table | 5.2 (+21 %) |
+| 150 kHz | 4.8 Ω | 3.8–5.7 | 4.79 Ω | 3.83–5.75 | ≈5.8 (+21 %) |
+| 1 MHz | 26.8 Ω | 21–32 | 26.64 Ω | 21.31–31.97 | 28.8 (+7 %) |
+| 10 MHz | 47.1 Ω | 38–57 | 47.10 Ω | 37.68–56.53 | 46.2 (−2 %) |
+| 30 MHz | 47.5 Ω | 38–57 | 47.56 Ω | 38.05–57.07 | ≈48 (+1 %) |
+
+The 1 MHz target of 26.8 Ω is the circuit value at the marker frequency 1.009 MHz; at exactly 1 MHz
+the circuit gives the 26.64 Ω of the standard.
 
 Result: from 1 MHz upwards both channels are on target with margin. At 150 kHz without current the impedance is 1 %
 above the upper tolerance limit — this is less than the NanoVNA uncertainty when measuring 5 Ω. Under working current
