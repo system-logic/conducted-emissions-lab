@@ -15,7 +15,8 @@ when reworking converter prototypes.
 ## Bench
 
 View from above: the reference plate with the LISN and the limiter on top of it (upper left), TinySA Ultra (left),
-oscilloscope (lower left) and the electronic load with its lid removed (lower right). The laboratory power supplies are
+oscilloscope (lower left) and the electronic load with its lid removed (lower right). The aluminium sheet with profiles
+in the centre is the reference plane. The laboratory power supplies are
 above the upper edge of the frame.
 
 ![Bench, view from above](bench-photos/bench-overview.jpg)

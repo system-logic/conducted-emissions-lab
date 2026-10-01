@@ -4,7 +4,7 @@
 
 Two channels, positive and negative, in one enclosure: 5 µH inductor between the input and output terminals,
 1 µF from each input terminal to the enclosure, 0.1 µF in the measurement branch, attenuator 100/68/100 Ω,
-BNC measurement output. The positive channel has a fuse at the input.
+BNC measurement output. The positive channel has a 16 A fuse at the input.
 
 A partition divides the enclosure into the input side and the side with the inductors and the measurement boards;
 each line passes through the partition via a feed-through capacitor HFC-2L-CH (a type made for magnetrons). The grounds of the measurement boards are bonded
