@@ -47,6 +47,16 @@ Levels in dBµV on the screen (without correction).
 
 Screenshots: 14 files, one per step (step numbering matches the table), see [tinysa-screenshots/](tinysa-screenshots/).
 
+PC on (step 8) and PC off (step 9), the rest unchanged:
+
+| Step 8 | Step 9 |
+|---|---|
+| ![Step 8: power supply on, 6.5 A, PC on](tinysa-screenshots/step-08_psu-on-6.5A.jpg) | ![Step 9: PC switched off](tinysa-screenshots/step-09_pc-off.jpg) |
+
+At step 13 the plug of the load transformer stayed in the socket; the transformer was switched off with the button on the plug.
+
+Not recorded: the frequency spacing between the lines of the comb (it would identify the converter in the PC).
+
 ## 6.3. Interference sources
 
 | Source | Evidence | Contribution |
