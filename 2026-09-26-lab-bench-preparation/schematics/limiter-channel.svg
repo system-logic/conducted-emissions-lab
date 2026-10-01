@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 400" width="820" height="400">
+<rect width="820" height="400" fill="#fff"/>
+<text x="20" y="28" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" text-anchor="start" dominant-baseline="middle">Limiter: one of two identical channels</text>
+<circle cx="60" cy="150" r="4" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="60" y="134" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Input, BNC</text>
+<polyline points="64,150 90,150" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="90,150.0 126.0,150.0" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="134.0,150.0 170,150.0" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="126.0,136.0 126.0,164.0" fill="none" stroke="#000" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="134.0,136.0 134.0,164.0" fill="none" stroke="#000" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="130.0" y="126.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" dominant-baseline="middle">100 nF</text>
+<polyline points="170,150 600,150" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="220" cy="150" r="3.5" fill="#000" stroke="#000" stroke-width="2"/>
+<polyline points="220.0,150 220.0,195.0" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="220.0,245.0 220.0,290" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="211.0" y="195.0" width="18" height="50" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="236.0" y="220.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="start" dominant-baseline="middle">150 Ω</text>
+<polyline points="206,290 234,290" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="211,295 229,295" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="216,300 224,300" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="240,150.0 285.0,150.0" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="335.0,150.0 380,150.0" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="285.0" y="141.0" width="50" height="18" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="310.0" y="130.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" dominant-baseline="middle">39 Ω</text>
+<circle cx="400" cy="150" r="3.5" fill="#000" stroke="#000" stroke-width="2"/>
+<polyline points="400.0,150 400.0,195.0" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="400.0,245.0 400.0,290" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="391.0" y="195.0" width="18" height="50" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="416.0" y="220.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="start" dominant-baseline="middle">150 Ω</text>
+<polyline points="386,290 414,290" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="391,295 409,295" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="396,300 404,300" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="500" cy="150" r="3.5" fill="#000" stroke="#000" stroke-width="2"/>
+<polyline points="500,150 500,210.0" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="500,230.0 500,290" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="488,210.0 512,210.0 500,230.0" fill="#000" stroke="#000" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="488,230.0 512,230.0" fill="none" stroke="#000" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="486,290 514,290" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="491,295 509,295" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="496,300 504,300" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="580" cy="150" r="3.5" fill="#000" stroke="#000" stroke-width="2"/>
+<polyline points="580,150 580,210.0" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="580,230.0 580,290" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="568,230.0 592,230.0 580,210.0" fill="#000" stroke="#000" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="568,210.0 592,210.0" fill="none" stroke="#000" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="602" y="220.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="start" dominant-baseline="middle">2 × BAS316</text>
+<polyline points="566,290 594,290" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="571,295 589,295" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="576,300 584,300" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="600,150 736,150" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="740" cy="150" r="4" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="740" y="134" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Output, BNC</text>
+<text x="20" y="350" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="start" dominant-baseline="middle">The ground symbol is the enclosure. Input and output connectors of a channel are on the same end plate.</text>
+</svg>

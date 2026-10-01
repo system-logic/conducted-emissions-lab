@@ -1,11 +1,17 @@
 # Limiter (2 channels)
 
 Channel circuit: BNC input → 100 nF capacitor → π-attenuator 150/39/150 Ω →
-two anti-parallel diodes to the enclosure → SMA output.
+two anti-parallel diodes to the enclosure → BNC output.
 Calculated attenuation 6.13 dB, calculated capacitor cut-off ≈16 kHz.
 
+![Limiter: one of two identical channels](schematics/limiter-channel.svg)
+
+The two channels are identical and are placed at opposite ends of one enclosure, far from each other.
+The input and output connectors of a channel are on the same end plate, so the leads to the board are as short
+as possible. All four connectors are BNC; adapters are used where another connector type is needed.
+
 Conditions: slot 0, both ports, the second channel terminated on both sides (BNC — 50 Ω feed-through load,
-SMA — LOAD standard). Instrument level ≈0.1 V, at the diodes after the attenuator ≈50 mV — the diodes are off,
+output — LOAD standard through an adapter). Instrument level ≈0.1 V, at the diodes after the attenuator ≈50 mV — the diodes are off,
 the normal linear mode was measured.
 
 ## 3.1. Channel A
@@ -61,3 +67,23 @@ type and its marking code is A6. Values from the datasheet: forward voltage max 
 capacitance max 1.5 pF at 0 V and 1 MHz, reverse recovery time max 4 ns.
 
 Not established: the manufacturer of the diodes actually fitted (no access to the packaging).
+
+## Photographs
+
+Closed enclosure, top and bottom:
+
+![Limiter, closed enclosure, top](limiter-photos/limiter-closed-top.jpg)
+
+![Limiter, closed enclosure, bottom with the board mounting screws](limiter-photos/limiter-closed-bottom.jpg)
+
+Opened, view from above: one board at each end, next to its two BNC connectors.
+
+![Limiter opened, view from above](limiter-photos/limiter-open-top-view-1.jpg)
+
+![Limiter opened, view from above, second photograph](limiter-photos/limiter-open-top-view-2.jpg)
+
+Opened, at an angle:
+
+![Limiter opened, at an angle](limiter-photos/limiter-open-angle-1.jpg)
+
+![Limiter opened, at an angle, second photograph](limiter-photos/limiter-open-angle-2.jpg)

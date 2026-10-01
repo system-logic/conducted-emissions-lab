@@ -17,7 +17,7 @@ when reworking converter prototypes.
 | Unit | What it is | State |
 |---|---|---|
 | Line impedance stabilisation network (LISN), 2 channels | 5 µH, 0.1 µF, 1 kΩ, attenuator 100/68/100 Ω, BNC | Built, measured |
-| Limiter, 2 channels in one enclosure | 100 nF → attenuator 150/39/150 Ω → 2 anti-parallel diodes → SMA | Built, measured |
+| Limiter, 2 channels in one enclosure | 100 nF → attenuator 150/39/150 Ω → 2 anti-parallel diodes BAS316 → BNC | Built, measured |
 | Electronic load | Own design, with protection (bridge, TVS diode, thyristor BT152-800R driven by comparator LM393, driver KP501B) | Built |
 | Vector network analyser | NanoVNA-H4 rev 4.4 (ZeeTK mixer, hugen firmware based on DiSlord) | Calibrated |
 | Spectrum analyser | TinySA Ultra | In use |
