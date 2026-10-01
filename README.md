@@ -2,6 +2,19 @@
 
 Conducted emissions from switching voltage converters, 150 kHz – 30 MHz.
 
+**Evgenii Zagorodskikh** — power electronics and EMC by specialisation. Currently deputy head of a telecommunications and data networks section in a communications department, 6.5 years in the role. Open to research and engineering work in power electronics and EMC; relocation and remote work are possible. Contact: [LinkedIn](https://www.linkedin.com/in/evgenii-zagorodskikh-58671042a/).
+
+**What is here.** A home bench for measuring conducted emission, built and checked by me, with every measurement, correction and mistake written down. Current state: the bench is ready; measurements of converter prototypes come next.
+
+**Where to start:**
+
+- [Bench background protocol](2026-09-26-lab-bench-preparation/06-background-protocol.md) — what the bench itself picks up, step by step, and which source makes measurement impossible until it is removed.
+- [Error and correction log](2026-09-26-lab-bench-preparation/08-errors.md) — what went wrong and how it was found.
+- [LISN channel check](2026-09-26-lab-bench-preparation/05-lisn.md) — impedance against the CISPR 25 curve and the path correction.
+- [Limiter](2026-09-26-lab-bench-preparation/03-limiter.md) — attenuation, channel isolation and a labelling error found from the measurement.
+
+The rest of this file is the starting position of the project: what I claimed in 2015–2019 and why it needs re-testing.
+
 Between 2015 and 2019 I worked in a university EMC lab and published a series of papers and patents on this subject. I think the ideas hold up; the discipline does not. The results rested on one-off prototypes, with no reproducibility protocol, and were measured with a detector for which no limits are defined in this band.
 
 The goal here is to re-test those results on a bench I build myself, and to publish everything — raw captures, processing code, conclusions — so the work can be contested rather than believed.
