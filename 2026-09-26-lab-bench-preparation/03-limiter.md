@@ -55,10 +55,9 @@ The "input" and "output" labels on the enclosure had been applied the wrong way 
 a double pass through the 6 dB attenuator). The unit was built as described, with the capacitor at the input.
 The labels have been corrected; the tables above are given with the correct assignment.
 
-Diodes: silicon switching diodes; the package looks like SOD323, with a white cathode mark and the marking A6
-(BAS316 in the notes). In the BAS16 family datasheet that was at hand (dated 2009-09-28) the marking A6 belongs to
-BAS16-02W (package SCD80) and BAS16-02L (package TSLP-2-1), and the SOD323 variant is marked differently, so the exact
-type is not confirmed by a datasheet. Values from that datasheet for the family: forward voltage max 715 mV at 1 mA,
-capacitance max 2 pF at 0 V and 1 MHz.
+Diodes: BAS316, high-speed silicon switching diodes. Identified on 2026-10-01 from the package (looks like SOD323,
+white cathode mark, marking A6) and the NXP "BAS16 series" datasheet (Rev. 05, 25 August 2008): BAS316 is the SOD323
+type and its marking code is A6. Values from the datasheet: forward voltage max 715 mV at 1 mA and 855 mV at 10 mA,
+capacitance max 1.5 pF at 0 V and 1 MHz, reverse recovery time max 4 ns.
 
-Not established: the exact type and the manufacturer of the diodes (no access to the packaging). Left for the second video.
+Not established: the manufacturer of the diodes actually fitted (no access to the packaging).
