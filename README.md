@@ -2,7 +2,7 @@
 
 Conducted emissions from switching voltage converters, 150 kHz – 30 MHz.
 
-**Evgenii Zagorodskikh** — power electronics and EMC by specialisation. Currently deputy head of a telecommunications and data networks section in a communications department, 6.5 years in the role. Open to research and engineering work in power electronics and EMC; relocation and remote work are possible. Contact: [LinkedIn](https://www.linkedin.com/in/evgenii-zagorodskikh-58671042a/).
+**Evgenii Zagorodskikh** — power electronics and EMC by specialisation. Currently deputy head of a telecommunications and data networks section in a communications department; 6.5 years with the company. Open to research and engineering work in power electronics and EMC; relocation and remote work are possible. Contact: [LinkedIn](https://www.linkedin.com/in/evgenii-zagorodskikh-58671042a/).
 
 **What is here.** A home bench for measuring conducted emission, built and checked by me, with every measurement, correction and mistake written down. Current state: the bench is ready; measurements of converter prototypes come next.
 
@@ -15,7 +15,7 @@ Conducted emissions from switching voltage converters, 150 kHz – 30 MHz.
 
 The rest of this file is the starting position of the project: what I claimed in 2015–2019 and why it needs re-testing.
 
-Between 2015 and 2019 I worked in a university EMC lab and published a series of papers and patents on this subject. I think the ideas hold up; the discipline does not. The results rested on one-off prototypes, with no reproducibility protocol, and were measured with a detector for which no limits are defined in this band.
+From 2012 to 2018 I worked at a university, in its EMC lab and then at its space technology research institute, and between 2015 and 2019 published a series of papers and patents on this subject; the last of them came from analysing material collected earlier. I think the ideas hold up; the discipline does not. The results rested on one-off prototypes, with no reproducibility protocol, and were measured with a detector for which no limits are defined in this band.
 
 The goal here is to re-test those results on a bench I build myself, and to publish everything — raw captures, processing code, conclusions — so the work can be contested rather than believed.
 
