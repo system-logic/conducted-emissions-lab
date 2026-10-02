@@ -95,6 +95,10 @@ together with the conditions under which they were taken. A capture without its 
 
 The format of the files and of the index is fixed in task B5, before the first capture is taken.
 
+The oscilloscope saves captures as CSV files. Not established yet: the longest record and the sampling rate available
+with two channels on, and the resolution of the instrument in bits. They set the lowest frequency, the frequency resolution
+and the dynamic range of one capture, and are to be recorded before the format is fixed.
+
 ## Part C. Separating the two kinds of interference
 
 The interference on the two lines consists of a part that is the same on both lines (common mode) and a part that is
