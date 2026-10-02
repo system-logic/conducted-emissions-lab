@@ -42,21 +42,29 @@ Every deviation from the standard is to be written down in the result document.
 
 ## Part B. First test circuit
 
-The test circuit is a universal board: one layout on which a change of the control, or of some components, gives
-a buck converter, a boost converter, a flyback converter, a buck-boost converter and a bridge or half-bridge inverter.
-The purpose is to keep the layout the same: all tracks stay in one state whatever the topology. This addresses
-the weakness stated in the root README for claim C5, where the layout was not controlled between prototypes.
+The test circuits are built on a small set of boards with a fixed layout, so that a change of topology does not
+change the tracks. This addresses the weakness stated in the root README for claim C5, where the layout was not
+controlled between prototypes.
 
-The other side of this choice is stated here in advance: copper that a given topology does not use stays on the board
-and is part of every result, so the results describe the topologies on this layout.
+| Board | Topologies | How the topology is changed |
+|---|---|---|
+| Cell board | Buck and boost | The board is the same for both: only the connection of the source and of the load and the control change |
+| Two cell boards | Push-pull and bridge | Two identical cell boards are used together |
+| Flyback board | Flyback | A separate board |
+
+Every board has places for current shunts. For emission measurements the shunts are removed and replaced with a wire
+soldered flush to the board, as a continuation of the track.
+
+What this structure does not remove is stated here in advance: the flyback is on a different layout from the others,
+so its comparison with them is less strict; and two boards used together add the connections between them.
 
 | No. | Task | Method | Expected result | Status |
 |---|---|---|---|---|
-| B1 | Describe the universal board | Schematic, layout, what is fitted and how the control is connected for each topology, component values, operating point (input voltage, load current, switching frequency), photograph of the build and of its position on the plate | A description from which the measurement can be repeated | Open |
+| B1 | Describe the boards | Schematic and layout of the cell board and of the flyback board; for each topology what is fitted and how the source, the load and the control are connected; component values, operating point (input voltage, load current, switching frequency); photographs of the build and of its position on the plate | A description from which the measurement can be repeated | Open |
 | B2 | Measure the test circuit | Three spectra for each state, as planned in stage 1: empty LISN, bench without the prototype in working mode, bench with the prototype. Both channels, positive and negative. PC switched off. RBW 10 kHz, max hold over 3–4 sweeps, marker on the trace maximum | Spectra of the prototype that stand clear of the bench background, with the correction of 15.8 dB applied (or the value from A5) | Open |
 | B3 | Decide whether a filter between the prototype and the load is needed | From the B2 spectra: compare the bench without the prototype in working mode with the empty LISN | If the load and its leads still add to the spectrum: an inductor of several tens of microhenries and capacitors to ground on both sides, outside the measured port. If not: no filter, and that is recorded | Open |
 | B4 | Compare with the limits as a reference | Table 6 of the standard, peak detector, classes 1–5 | A statement of where the prototype stands relative to the classes, with the reminder that this bench gives relative comparisons, not compliance results | Open |
-| B5 | First processing code | Raw captures from the analyser saved as files; a script applies the corrections and plots the spectra against the limits | Raw data and code in this folder, so that every figure can be reproduced from them | Open |
+| B5 | First processing code | Data are taken with the oscilloscope, so that both paths are recorded at the same time and under the same conditions. Raw captures are saved as files; a script applies the corrections, computes the spectra and plots them against the limits | Raw data and code in this folder, so that every figure can be reproduced from them | Open |
 
 Which topology is measured first, and which of the claims C1–C5 of the [root README](../README.md) the first test
 is meant to check, is not written down yet.
@@ -74,7 +82,7 @@ Task numbers in this part start with S, so as not to be confused with the claims
 |---|---|---|---|---|
 | S1 | Set up the two-channel path | Both BNC outputs of the LISN through the two limiter channels to two oscilloscope channels, each with a 50 Ω feed-through load; cables of equal length | Path assembled and described. Stage 1 gives the starting point: LISN channels agree within 0.15 dB in S21, limiter channels within 0.03 dB; the input capacitance of the oscilloscope channels may differ by 1–2 pF | Open |
 | S2 | Measure how well the path separates the two parts | The same signal applied to both output terminals tied together: whatever appears in the difference is the error of the path. Then a signal applied between the two terminals: whatever appears in the sum is the error | Two numbers by frequency: how far a pure common-mode signal leaks into the difference and a pure differential-mode signal into the sum. They set the limit of what S3 can show | Open |
-| S3 | Separate the interference of the test circuit | Both channels recorded at once; sum and difference computed; spectra of both parts | Spectra of the common-mode and differential-mode parts of the same operating point as in B2, and a statement of which part dominates in which band, within the limit found in S2 | Open |
+| S3 | Separate the interference of the test circuit | Both channels recorded at once; sum and difference computed by the code of B5; spectra of both parts | Spectra of the common-mode and differential-mode parts of the same operating point as in B2, and a statement of which part dominates in which band, within the limit found in S2 | Open |
 | S4 | Compare with the spectrum analyser | The same operating point measured with the TinySA on each channel | Agreement between the oscilloscope spectra and the analyser spectra stated, with the differences explained or recorded as open | Open |
 
 
