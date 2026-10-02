@@ -64,10 +64,36 @@ so its comparison with them is less strict; and two boards used together add the
 | B2 | Measure the test circuit | Three spectra for each state, as planned in stage 1: empty LISN, bench without the prototype in working mode, bench with the prototype. Both channels, positive and negative. PC switched off. RBW 10 kHz, max hold over 3–4 sweeps, marker on the trace maximum | Spectra of the prototype that stand clear of the bench background, with the correction of 15.8 dB applied (or the value from A5) | Open |
 | B3 | Decide whether a filter between the prototype and the load is needed | From the B2 spectra: compare the bench without the prototype in working mode with the empty LISN | If the load and its leads still add to the spectrum: an inductor of several tens of microhenries and capacitors to ground on both sides, outside the measured port. If not: no filter, and that is recorded | Open |
 | B4 | Compare with the limits as a reference | Table 6 of the standard, peak detector, classes 1–5 | A statement of where the prototype stands relative to the classes, with the reminder that this bench gives relative comparisons, not compliance results | Open |
-| B5 | First processing code | Data are taken with the oscilloscope, so that both paths are recorded at the same time and under the same conditions. Raw captures are saved as files; a script applies the corrections, computes the spectra and plots them against the limits | Raw data and code in this folder, so that every figure can be reproduced from them | Open |
+| B5 | Dataset format and first processing code | Data are taken with the oscilloscope, so that both paths are recorded at the same time and under the same conditions. The format of the raw files and of the index of captures is fixed first. A script applies the corrections, computes the spectra and plots them against the limits | Raw data, the index and the code in this folder, so that every figure can be reproduced from them and the data can be used by others | Open |
 
-Which topology is measured first, and which of the claims C1–C5 of the [root README](../README.md) the first test
-is meant to check, is not written down yet.
+### Order of the tests
+
+The work goes through the claims C1–C5 of the [root README](../README.md) one after another. The first topology is
+the buck converter on the cell board.
+
+| Claim | What is varied | Expected result |
+|---|---|---|
+| C1, three zones of the spectrum (0.15–3, 3–16, 16–30 MHz) | Switching frequency; gate resistor, that is, the switching edge time | The boundaries of the zones move with these parameters. The author expects this almost with certainty, since the zones follow from the edges of the chosen switches; the measurement is to show by how much, and whether the three-zone description survives in a form tied to the parameters instead of fixed frequencies |
+| C4, snubbers | The same operating point with and without a snubber | The difference between the two spectra by band, and the difference in efficiency |
+
+Claims C2, C3 and C5 follow in later tests; C5 needs the bridge topologies on two cell boards. Part C of this stage
+works towards C3: it shows which part of the spectrum is common mode and which is differential mode.
+
+### Dataset
+
+Apart from checking the claims, every measurement goes into a dataset that is published in the open: raw captures
+together with the conditions under which they were taken. A capture without its conditions is not added.
+
+| For each capture | Recorded |
+|---|---|
+| What was measured | Board, topology, what is fitted (switches, diode, inductor, snubber, gate resistor) |
+| Operating point | Input voltage, load current, switching frequency, duty cycle |
+| Bench | Geometry of the leads, earthing state, which LISN channel on which oscilloscope channel, limiter in or out |
+| Instrument | Oscilloscope settings: sampling rate, record length, vertical scale, coupling, bandwidth limit |
+| Reference captures | The empty LISN and the bench without the prototype taken in the same session |
+| Processing | Corrections applied and the version of the code |
+
+The format of the files and of the index is fixed in task B5, before the first capture is taken.
 
 ## Part C. Separating the two kinds of interference
 
