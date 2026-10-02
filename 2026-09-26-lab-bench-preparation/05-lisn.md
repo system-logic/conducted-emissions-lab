@@ -28,6 +28,13 @@ the lid is closed, the inductor turns are already fixed with cable ties. PORT 1 
 conductors 2.5–3 cm), PORT 2 directly to the BNC of the same channel. Slot 0.
 Impedance (Smith chart, R + L/C) and S21 are read at the same time.
 
+![LISN channel check: PORT 1 on the output terminal, PORT 2 on the BNC of the same channel](bench-photos/lisn-measurement-setup.jpg)
+
+The connection at the output terminal: the centre contact of the PORT 1 connector goes to the terminal, its ground
+to the enclosure at the BNC flange.
+
+![Connection of PORT 1 to the output terminal and of PORT 2 to the BNC](bench-photos/lisn-measurement-connection.jpg)
+
 The 2.5–3 cm conductors add ≈30 nH: unnoticeable up to 10 MHz, ≈+5 Ω at 30 MHz, ≈+9 Ω
 of reactance at 50 MHz — this has been subtracted in the magnitude values below.
 

@@ -20,6 +20,15 @@ Marker format: Smith chart, R + L/C (series model), PORT 1 only.
 | 10.13 MHz | 2.5 µH | 104 Ω | 3.52 µH | 150 Ω |
 | 30 MHz | 0.99 µH | 307 Ω | 1.19 µH | 460 Ω |
 
+Measurement of the inductor on its own: the winding is connected directly to the PORT 1 cable of the NanoVNA.
+
+![Inductor connected to PORT 1 of the NanoVNA](bench-photos/inductor-measurement-setup.jpg)
+
+The NanoVNA screen with the marker at 30.004 MHz: 459.0 Ω and 1.19 µH in the series model (459.8 + j224.7 Ω),
+S11 −1.53 dB. This is the 30 MHz point of the 6-turn column in the table above.
+
+![NanoVNA screen, inductor with 6 turns, marker at 30.004 MHz](bench-photos/inductor-measurement-screen-30mhz.jpg)
+
 The main value is at 1 MHz (the reactance of the coil there is close to 50 Ω, where the instrument is most accurate).
 The 10 kHz point is approximate (reactance 0.2–0.4 Ω).
 
