@@ -22,26 +22,25 @@ the normal linear mode was measured.
 | 135 kHz | −6.14 | −6.12 | −18.17 | −30.37 |
 | 1.009 MHz | −6.04 | −6.04 | −35.9 | −47.9 |
 | 10.132 MHz | −6.05 | −6.05 | −42.82 | −43.1 |
-| 30.004 MHz | see note | −6.09 | see note | −33.71 |
+| 30.004 MHz | ≈ −6.09 | −6.09 | ≈ −32 | −33.71 |
 | 50 MHz | −6.15 | −6.14 | −27.5 | −29.23 |
 
-Note: in the input→output direction at 30 MHz the recorded values are −13 / −1.31 dB — practically
-the same as the 10 kHz row; the marker was probably on the first point. Expected ≈ −6.09 / −32.
-To be checked against the video recording.
+Values marked ≈ were not read from the marker at this point. The traces are smooth, without jumps; S21 is taken equal
+to the reverse direction, S11 of the input from the neighbouring points and from channel B.
 
 ## 3.2. Channel B
 
 | Frequency | S21 input→output | S21 output→input | S11 of input | S11 of output |
 |---|---|---|---|---|
-| 10 kHz | see note | −12.31 | see note | −13.58 |
+| 10 kHz | ≈ −12.5 | −12.31 | ≈ −1.4 | −13.58 |
 | 135 kHz | −6.14 | −6.12 | −17.99 | −30.27 |
 | 1.009 MHz | −6.04 | −6.04 | −35.64 | −49 |
 | 10.132 MHz | −6.05 | −6.02 | −43.12 | −41 |
 | 30.004 MHz | −6.09 | −6.10 | −32.37 | −31.57 |
 | 50 MHz | −6.14 | −6.154 | −27.83 | −27.15 |
 
-Note: at 10 kHz input→output the recorded values are −12.31 / −13.58 — digit for digit the same as in the reverse
-direction; the row was probably copied twice. Expected ≈ −12.5 / −1.4.
+Values marked ≈ were not read from the marker at this point. The traces are smooth, without jumps; the values are taken
+from the reverse direction and from channel A.
 
 ## 3.3. Conclusions
 

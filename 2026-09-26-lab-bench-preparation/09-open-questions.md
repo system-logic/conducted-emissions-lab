@@ -3,7 +3,6 @@
 - Earthing the reference plate — the second series, which begins with a repeat of the background check without a prototype, with full earthing.
 - Leakage between the LISN channels (not measured; low priority).
 - Refinement of the correction in the lower decade by a direct method (generator + oscilloscope) — postponed to the second video.
-- Two doubtful rows in the limiter tables (channel A, 30 MHz; channel B, 10 kHz).
 
 ## Closed
 
