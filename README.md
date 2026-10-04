@@ -15,7 +15,7 @@ Conducted emissions from switching voltage converters, 150 kHz – 30 MHz.
 
 The rest of this file is the starting position of the project: what I claimed in 2015–2019 and why it needs re-testing.
 
-From 2012 to 2018 I worked at a university, in its EMC lab and then at its space technology research institute, and between 2015 and 2019 published a series of papers and patents on this subject; the last of them came from analysing material collected earlier. I think the ideas hold up; the discipline does not. The results rested on one-off prototypes, with no reproducibility protocol, and were measured with a detector for which no limits are defined in this band.
+From 2012 to 2018 I worked at a university, in its EMC lab and then at its space technology research institute, and between 2015 and 2019 published a series of papers and patents on this subject; the last of them came from analysing material collected earlier. The work was also written up as a PhD thesis: it was accepted and passed the pre-defence, after which I withdrew it myself, judging it not developed enough, and did not complete the degree. I think the ideas hold up; the discipline does not. The results rested on one-off prototypes, with no reproducibility protocol, and were measured with an RMS detector, for which CISPR 25 sets no limits: its limits are given for peak, quasi-peak and average detectors, so the results could not be compared with them.
 
 The goal here is to re-test those results on a bench I build myself, and to publish everything — raw captures, processing code, conclusions — so the work can be contested rather than believed.
 
@@ -23,15 +23,15 @@ The goal here is to re-test those results on a bench I build myself, and to publ
 
 **C1 — Three-zone spectral model.** The spectrum divides into 0.15–3, 3–16 and 16–30 MHz, each zone traceable to a distinct physical source. *The boundaries are not universal — they follow from the switching frequency, diode recovery times and layout of my particular prototypes.*
 
-**C2 — Quantitative map of element contributions.** Each element of the power stage contributes a quantifiable amount to the total. *Adding an element does not add only its own parasitics; it changes the whole network. The difference between spectra before and after adding a diode is not the diode's emission. Measured with an RMS detector, while limits in this band are defined for quasi-peak and average.*
+**C2 — Quantitative map of element contributions.** Each element of the power stage contributes a quantifiable amount to the total. *Adding an element does not add only its own parasitics; it changes the whole network. The difference between spectra before and after adding a diode is not the diode's emission. Measured with an RMS detector, while the limits of CISPR 25 are given for peak, quasi-peak and average detectors.*
 
 **C3 — Source localisation and inverse identification.** Topology and parameters — switching frequency, duty cycle, transition times, parasitic capacitances — can be read off the shape of the spectrum. *Validated against the same prototypes it was derived from. That is fitting, not prediction.*
 
-**C4 — Snubbers on MOSFETs are an EMC measure, not an efficiency measure.** Up to roughly 1.5 kW a snubber does not improve efficiency but substantially improves the electromagnetic picture. *The 1.5 kW figure stands for the argument rather than a measured threshold, and devices have moved on in ten years.*
+**C4 — Soft switching, snubbers on MOSFETs included, is an EMC measure first and an efficiency measure second.** In low-power MOSFET circuits a snubber does not improve efficiency, and may cost some, yet substantially improves the electromagnetic picture. *Where "low power" ends was never measured: the figure of roughly 1.5 kW that went with this claim is nominal, not a threshold, and devices have moved on in ten years.*
 
 **C5 — Topological hierarchy by conducted emission.** PWM inverter, LLC converter and phase-shifted inverter can be ranked, phase-shifted best. *Declared on a single criterion, with layout uncontrolled between prototypes and the conditions of comparison unstated.*
 
-All five share one root weakness: few prototypes, no reproducibility protocol, a detector without defined limits here. One remedy covers them — a new dataset with fixed geometry, standards-referenced measurement, and deliberate parameter variation.
+All five share one root weakness: few prototypes, no reproducibility protocol, a detector the standard sets no limits for. One remedy covers them — a new dataset with fixed geometry, standards-referenced measurement, and deliberate parameter variation.
 
 ## What this bench is not
 
