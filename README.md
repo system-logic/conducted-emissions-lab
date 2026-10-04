@@ -15,7 +15,7 @@ Conducted emissions from switching voltage converters, 150 kHz – 30 MHz.
 
 The rest of this file is the starting position of the project: what I claimed in 2015–2019 and why it needs re-testing.
 
-From 2012 to 2018 I worked at a university, in its EMC lab and then at its space technology research institute, and between 2015 and 2019 published a series of papers and patents on this subject; the last of them came from analysing material collected earlier. The work was also written up as a PhD thesis: it was accepted and passed the pre-defence, after which I withdrew it myself, judging it not developed enough, and did not complete the degree. I think the ideas hold up; the discipline does not. The results rested on one-off prototypes, with no reproducibility protocol, and were measured with an RMS detector, for which CISPR 25 sets no limits: its limits are given for peak, quasi-peak and average detectors, so the results could not be compared with them.
+From 2012 to 2018 I worked at a university, in its EMC lab and then at its space technology research institute, and between 2015 and 2019 published a series of papers and patents on this subject; the last of them came from analysing material collected earlier. The work was also written up as a PhD thesis: it was accepted and passed the pre-defence, after which I withdrew it myself, judging it not developed enough, and did not complete the degree. I think the ideas hold up; the discipline does not. The results rested on one-off prototypes, with no reproducibility protocol, and the detector was not the same throughout. The spectra in the papers come partly from an SMV11 selective microvoltmeter, which measures quasi-peak, and partly from an Agilent spectrum analyser photographed from its screen, which measures RMS; the papers do not state in every case which instrument was used. Measurements for the lab's customers were always quasi-peak; in my own research the two were mixed. CISPR 25 gives its limits for peak, quasi-peak and average detectors, so the RMS spectra cannot be compared with the limits, and the two kinds of spectra cannot be compared with each other.
 
 The goal here is to re-test those results on a bench I build myself, and to publish everything — raw captures, processing code, conclusions — so the work can be contested rather than believed.
 
@@ -23,7 +23,7 @@ The goal here is to re-test those results on a bench I build myself, and to publ
 
 **C1 — Three-zone spectral model.** The spectrum divides into 0.15–3, 3–16 and 16–30 MHz, each zone traceable to a distinct physical source. *The boundaries are not universal — they follow from the switching frequency, diode recovery times and layout of my particular prototypes.*
 
-**C2 — Quantitative map of element contributions.** Each element of the power stage contributes a quantifiable amount to the total. *Adding an element does not add only its own parasitics; it changes the whole network. The difference between spectra before and after adding a diode is not the diode's emission. Measured with an RMS detector, while the limits of CISPR 25 are given for peak, quasi-peak and average detectors.*
+**C2 — Quantitative map of element contributions.** Each element of the power stage contributes a quantifiable amount to the total. *Adding an element does not add only its own parasitics; it changes the whole network. The difference between spectra before and after adding a diode is not the diode's emission. The detector is not stated consistently: RMS from the spectrum analyser or quasi-peak from the SMV11, while the limits of CISPR 25 are given for peak, quasi-peak and average detectors.*
 
 **C3 — Source localisation and inverse identification.** Topology and parameters — switching frequency, duty cycle, transition times, parasitic capacitances — can be read off the shape of the spectrum. *Validated against the same prototypes it was derived from. That is fitting, not prediction.*
 
@@ -31,7 +31,7 @@ The goal here is to re-test those results on a bench I build myself, and to publ
 
 **C5 — Topological hierarchy by conducted emission.** PWM inverter, LLC converter and phase-shifted inverter can be ranked, phase-shifted best. *Declared on a single criterion, with layout uncontrolled between prototypes and the conditions of comparison unstated.*
 
-All five share one root weakness: few prototypes, no reproducibility protocol, a detector the standard sets no limits for. One remedy covers them — a new dataset with fixed geometry, standards-referenced measurement, and deliberate parameter variation.
+All five share one root weakness: few prototypes, no reproducibility protocol, and a mix of detectors not recorded capture by capture. One remedy covers them — a new dataset with fixed geometry, standards-referenced measurement, and deliberate parameter variation.
 
 ## What this bench is not
 
