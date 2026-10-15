@@ -81,6 +81,7 @@ Each stage of the work gets its own folder, named by the date it was done, with 
 |---|---|
 | [`2026-09-26-lab-bench-preparation`](2026-09-26-lab-bench-preparation/) | Lab bench preparation: LISN, limiter, instrument calibration, bench background |
 | [`2026-10-02-bench-earthing-and-first-test`](2026-10-02-bench-earthing-and-first-test/) | Bench earthing and first test: open items of stage 1, test boards with a fixed layout, separation of common-mode and differential-mode interference (tasks and expected results; in progress) |
+| [`2026-10-15-cell-board-design`](2026-10-15-cell-board-design/) | Cell board: schematic and layout of the buck / boost half-bridge test board, the layout rules and the reasons behind them (closes task B1 of stage 2 for the cell board) |
 
 ## Licence
 
