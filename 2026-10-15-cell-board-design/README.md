@@ -50,6 +50,18 @@ The board is two-layer, 133.5 × 101.6 mm, 1.6 mm, 70 µm copper.
 
 **Polygon connections**: thermal relief with four 1 mm spokes for every soldered part, so a TO-247 pin in two minus pours can still be heated with an iron; direct connection for vias and for the bolted holes and posts, which are never soldered.
 
+## What each rule is expected to do to the spectrum
+
+These are expectations, written before anything is measured; the perfboard-against-PCB rows of the series are what tests them.
+
+1. **Switching copper area.** The switch node, the Q1 source and the Q2 drain swing by the full bus voltage at every edge. Their copper has a capacitance to the reference plane, and that capacitance carries a common-mode current which returns through the LISN. Less area, and area kept away from the board edges, is expected to lower the common-mode part of the spectrum, mostly in the upper decade (3–30 MHz).
+2. **Solid bottom minus.** With the minus pour between the switching copper and the plane, the plane sees quiet copper, and the capacitance from the switch node is returned to board minus instead of to the plane. The main difference between the PCB and the perfboard is expected in the common-mode component, not in the differential one.
+3. **Return under the path.** The pulsed current of the hot loop returns in the plane directly under the top copper; the loop area is the path length times the board thickness, not the area a perfboard wire makes. Lower loop inductance means less ringing on the switching edges and a lower differential-mode level at 10–30 MHz, where the ringing sits.
+4. **Stitching vias.** Without them the top minus pour would be a separate sheet of copper joined to the bottom only through the through-hole pins: at high frequency it resonates and radiates, and its potential is not the plane's. The vias make the two pours one plane. The ring of vias around the switch node closes the displacement current from the switching copper into the plane next to its source, instead of letting it find a path across the board.
+5. **Clearance rules.** The 30 mil rule is about the 60 V on the bus, not about emission; it is listed with the layout only so that nobody looks for a hidden reason.
+
+What is not expected to change between the two builds: the differential-mode component below 1 MHz, which is set by the bus capacitors and the inductor, and the gate waveforms, which are set by the driver and the gate resistors.
+
 ![3D, top](img/pcb-3d-top.png)
 
 ![3D, bottom](img/pcb-3d-bottom.png)
